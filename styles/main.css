@@ -1,0 +1,222 @@
+/* Grid stuff */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* My stuff */
+
+html {
+  font-family: 'IBM Plex Serif', serif;
+  background: #DCD0C0;
+}
+
+nav {
+  background: #DCD0C0;
+  font-size: 20px;
+  /*text-align: center;
+  /*padding: top right bottom left; */
+  padding: 10px 0px 10px 30px;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+
+nav > ul > li {
+  display: inline;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #373737;
+}
+
+nav > ul > li > a:hover {
+  color: #C0B283;
+}
+
+nav > ul > li > .active {
+  color: #C0B283;
+}
+
+main {
+  background: #F4F4F4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.anything > ul > li > a {
+  color: #373737;
+  text-decoration: none;
+}
+
+div.anything > h3 {
+  padding: 20px 0px 10px 45px;
+}
+
+div.anything > ul > li > a:hover {
+  color: #C0B283;
+}
+
+div.anything > ul > li {
+  display: block;
+  padding: 5px 0px 5px 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  .col-1-max600 {width: 8.33%;}
+  .col-2-max600 {width: 16.66%;}
+  .col-3-max600 {width: 25%;}
+  .col-4-max600 {width: 33.33%;}
+  .col-5-max600 {width: 41.66%;}
+  .col-6-max600 {width: 50%;}
+  .col-7-max600 {width: 58.33%;}
+  .col-8-max600 {width: 66.66%;}
+  .col-9-max600 {width: 75%;}
+  .col-10-max600 {width: 83.33%;}
+  .col-11-max600 {width: 91.66%;}
+  .col-12-max600 {width: 100%;}
+  p {
+      font-size: 14px;
+  }
+  img {
+      max-width: 60%;
+      height: auto;
+  }
+  nav {
+    background: #DCD0C0;
+    font-size: 14px;
+    /*text-align: center;
+    /*padding: top right bottom left; */
+    padding: 5px 0px 5px 5px;
+  }
+  nav > ul {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-1-min600 {width: 8.33%;}
+  .col-2-min600 {width: 16.66%;}
+  .col-3-min600 {width: 25%;}
+  .col-4-min600 {width: 33.33%;}
+  .col-5-min600 {width: 41.66%;}
+  .col-6-min600 {width: 50%;}
+  .col-7-min600 {width: 58.33%;}
+  .col-8-min600 {width: 66.66%;}
+  .col-9-min600 {width: 75%;}
+  .col-10-min600 {width: 83.33%;}
+  .col-11-min600 {width: 91.66%;}
+  .col-12-min600 {width: 100%;}
+  p {
+    font-size: 16px;
+  }
+  img {
+      max-width: 50%;
+      height: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col-1-min768 {width: 8.33%;}
+  .col-2-min768 {width: 16.66%;}
+  .col-3-min768 {width: 25%;}
+  .col-4-min768 {width: 33.33%;}
+  .col-5-min768 {width: 41.66%;}
+  .col-6-min768 {width: 50%;}
+  .col-7-min768 {width: 58.33%;}
+  .col-8-min768 {width: 66.66%;}
+  .col-9-min768 {width: 75%;}
+  .col-10-min768 {width: 83.33%;}
+  .col-11-min768 {width: 91.66%;}
+  .col-12-min768 {width: 100%;}
+  p {
+    font-size: 16px;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-1-min992 {width: 8.33%;}
+  .col-2-min992 {width: 16.66%;}
+  .col-3-min992 {width: 25%;}
+  .col-4-min992 {width: 33.33%;}
+  .col-5-min992 {width: 41.66%;}
+  .col-6-min992 {width: 50%;}
+  .col-7-min992 {width: 58.33%;}
+  .col-8-min992 {width: 66.66%;}
+  .col-9-min992 {width: 75%;}
+  .col-10-min992 {width: 83.33%;}
+  .col-11-min992 {width: 91.66%;}
+  .col-12-min992 {width: 100%;}
+  p {
+    font-size: 18px;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .col-1-min1200 {width: 8.33%;}
+  .col-2-min1200 {width: 16.66%;}
+  .col-3-min1200 {width: 25%;}
+  .col-4-min1200 {width: 33.33%;}
+  .col-5-min1200 {width: 41.66%;}
+  .col-6-min1200 {width: 50%;}
+  .col-7-min1200 {width: 58.33%;}
+  .col-8-min1200 {width: 66.66%;}
+  .col-9-min1200 {width: 75%;}
+  .col-10-min1200 {width: 83.33%;}
+  .col-11-min1200 {width: 91.66%;}
+  .col-12-min1200 {width: 100%;}
+  p {
+    font-size: 18px;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+/*
+.row {
+  height: 90vh;
+}
+*/
+
+a#email {
+  text-decoration: none;
+  color: #373737;
+}
+
+a#email:hover {
+  color: #C0B283;
+}
